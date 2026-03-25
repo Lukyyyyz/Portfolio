@@ -1,0 +1,34 @@
+﻿/* Responsividade de Botão em Bloco */
+@media (max-width: 767px) {
+    .btn-xs-block {
+        display: block;
+        width: 100%;
+    }
+
+        .btn-xs-block + .btn-xs-block {
+            margin-top: 5px;
+        }
+
+    input[type="submit"].btn-xs-block,
+    input[type="reset"].btn-xs-block,
+    input[type="button"].btn-xs-block {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn-sm-block {
+        display: block;
+        width: 100%;
+    }
+
+        .btn-sm-block + .btn-sm-block {
+            margin-top: 5px;
+        }
+
+    input[type="submit"].btn-sm-block,
+    input[type="reset"].btn-sm-block,
+    input[type="button"].btn-sm-block {
+        width: 100%;
+    }
+}
