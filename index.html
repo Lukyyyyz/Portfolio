@@ -1,228 +1,352 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfólio de Lucas Augusto - Desenvolvedor de Software Full Stack.">
+    <title>Lucas Augusto | Desenvolvedor de Software</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <title>Lucas Augusto || Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Master -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Header / Navbar -->
+    <header class="header" id="topo">
+        <div class="header__container">
+            <a href="#topo" class="logo js-scroll-top">
+                <span class="logo__icon">&lt;/&gt;</span> Lucas<span>Augusto</span>
+            </a>
 
-    <header>
+            <nav class="nav" id="navMenu">
+                <a href="#sobre" class="nav__link"><i class="fa-solid fa-user"></i> Sobre</a>
+                <a href="#skills" class="nav__link"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#projetos" class="nav__link"><i class="fa-solid fa-layer-group"></i> Projetos</a>
+                <a href="#experiencia" class="nav__link"><i class="fa-solid fa-briefcase"></i> Trajetória</a>
+                <a href="#contato" class="nav__link nav__link--btn">Contato</a>
+            </nav>
 
-        <div class="divH" id="divH">
-            <div class="divHe">
+            <div class="header__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
-            </div>
-
-            <div class="divH">
-                <a href="#sm" class="sobre">
-                    SOBRE MIM
-                </a>
-            </div>
-            <div class="divH">
-                <g1 class="ponto">
-                    .
-                    </h1>
-            </div>
-            <div class="divH">
-                <a href="#skills" class="skills">
-                    SKILLS
-                </a>
-            </div>
-            <div class="divH">
-                <h1 class="ponto">
-                    .
-                </h1>
-            </div>
-            <div class="divH">
-                <a href="#Projetos" class="projetos">
-                    PROJETOS
-                </a>
-            </div>
-            <div class="divH">
-                <h1 class="ponto">
-                    .
-                </h1>
-            </div>
-            <div class="divH">
-                <a href="#formulario" class="contato">
-                    CONTATO
-                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
-
-
-        <div class="divHeD">
-
-        </div>
-
     </header>
-    <a href="#divH" id="seta"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-            <path fill="#ffffff"
-                d="M342.6 81.4C330.1 68.9 309.8 68.9 297.3 81.4L137.3 241.4C124.8 253.9 124.8 274.2 137.3 286.7C149.8 299.2 170.1 299.2 182.6 286.7L288 181.3L288 552C288 569.7 302.3 584 320 584C337.7 584 352 569.7 352 552L352 181.3L457.4 286.7C469.9 299.2 490.2 299.2 502.7 286.7C515.2 274.2 515.2 253.9 502.7 241.4L342.7 81.4z" />
-        </svg></a>
 
-    <div class="inicio" id="inicio">
-        <div class="barra">
-
-        </div>
-        <h1 class="lucas"><span>
-                Lucas Augusto
-            </span>
-
-        </h1>
-        <p class="fall-text">
-            Desenvolvedor de Software
-        </p>
-
-        <div class="neve">
-
-        </div>
-
-    </div>
-
-
-    <div class="sm" id="sm">
-        <div class="mim">
-            <h1 class="tmim">
-                SOBRE MIM
-            </h1>
-            <div class="barraP">
-                <h1 class="lucas1">
-                    Me chamo Lucas Augusto e sou completamente apaixonado por tecnologia. Desde pequeno, sempre fui
-                    aquele curioso que queria entender como tudo funcionava desmontava coisas, testava programas e
-                    passava horas descobrindo novidades na internet. Hoje, essa curiosidade virou uma paixão de verdade.
-                    Gosto de aprender, criar e encontrar novas formas de usar a tecnologia para facilitar a vida das
-                    pessoas. Acredito que inovar é mais do que mexer com máquinas é imaginar o que ainda não existe e
-                    transformar ideias em realidade.
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="badge">
+                    <span class="badge__dot"></span> Disponível para novos projetos
+                </div>
+                <h1 class="hero__title">
+                    Construindo soluções digitais <span class="highlight">robustas & escaláveis</span>
                 </h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="divSkills" id="skills">
-        <h1 class="textSkills"><span>
-                Skills
-            </span>
-        </h1>
-        <section class="cards-container">
-
-            <div class="card">
-                <img src="Imagens/javaS.png" alt="">
-            </div>
-            <div class="card">
-                <img src="Imagens/html.png" alt="" width="55%">
-            </div>
-            <div class="card">
-                <img src="Imagens/C.png" alt="" width="46%">
-            </div>
-            <div class="card">
-                <img src="Imagens/linux.webp" alt="" width="50%">
-            </div>
-            <div class="card">
-                <img src="Imagens/mysql.png" alt="" width="55%">
-            </div>
-            <div class="card">
-                <img src="Imagens/css.webp" alt="" width="80%">
-            </div>
-            <div class="card">
-                <img src="Imagens/php.webp" alt="" width="70%">
-            </div>
-            <div class="card">
-                <img src="Imagens/python.png" alt="" width="80%">
+                <p class="hero__subtitle fall-text">
+                    Desenvolvedor de Software focado em criar experiências modernas, sistemas eficientes e código limpo.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#projetos" class="btn btn--primary">Ver Projetos <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contato" class="btn btn--secondary">Entrar em contato</a>
+                </div>
             </div>
 
-        </section>
-    </div>
-    <div class="Projetos" id="Projetos">
-        <h1 class="textProjetos"><span>
-                Projetos
-            </span>
-        </h1>
-        <section class="cards-container">
-
-            <div class="card">
-                <a href="https://lukyyyyz.github.io/Tulenn/">
-                    <img src="Imagens/tulen.webp" alt="" width="110%">
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://lukyyyyz.github.io/BitMap/">
-                    <img src="Imagens/bitmap.png" alt="" width="150%">
-                </a>
-            </div>
-            
-        </section>
-    </div>
-    <div class="formulario" id="formulario">
-        <div>
-            <h1 class="textF">
-                Entre em contato atraves <br>
-                 do formulario!
-            </h1>
-        </div>
-        <div class="F">
-
-            <form class="form" id="contactForm" autocomplete="off" novalidate>
-                <div class="form-row">
-                    <div class="field full">
-                        <label for="nome">Nome:</label>
-                        <input id="nome" name="nome" type="text" required placeholder="Seu nome completo" />
+            <div class="hero__image-wrapper">
+                <div class="hero__photo-card">
+                    <div class="hero__photo" id="heroPhoto" style="background-image: url('Imagens/Eu.jpeg');"></div>
+                    <div class="hero__experience-badge">
+                        <i class="fa-solid fa-terminal"></i>
+                        <span>Clean Code & Architecture</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="form-row">
-                    <div class="field full">
-                        <label for="endereco">Email:</label>
-                        <input id="email" name="email" type="text" placeholder="exemplo@gmail.com" />
+    <!-- Sobre Mim Section -->
+    <section class="section" id="sobre">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__subtitle">Conheça-me</span>
+                <h2 class="section__title">Sobre Mim</h2>
+                <div class="section__line"></div>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__text-box">
+                    <p class="about__paragraph">
+                        Me chamo <strong>Lucas Augusto</strong> e sou um entusiasta e desenvolvedor apaixonado por tecnologia. Minha jornada começou pela curiosidade em entender a mecânica e a lógica por trás das aplicações.
+                    </p>
+                    <p class="about__paragraph">
+                        Hoje, transformo essa paixão em desenvolvimento de softwares de alto desempenho. Meu foco principal reside na construção de arquiteturas bem estruturadas, interfaces intuitivas e soluções eficientes para problemas complexos.
+                    </p>
+                    
+                    <div class="about__metrics">
+                        <div class="metric">
+                            <span class="metric__number">100%</span>
+                            <span class="metric__label">Comprometimento</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric__number">Multi</span>
+                            <span class="metric__label">Linguagens</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric__number">Modern</span>
+                            <span class="metric__label">Web Standard</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="form-row">
-                    <div class="field">
-                        <label for="telefone">Telefone:</label>
-                        <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" maxlength="15" />
+    <!-- Skills Section -->
+    <section class="section section--alt" id="skills">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__subtitle">Tecnologias</span>
+                <h2 class="section__title">Minhas Stack & Habilidades</h2>
+                <div class="section__line"></div>
+            </div>
+
+            <div class="skills__grid">
+                <div class="skill-card">
+                    <div class="skill-card__header">
+                        <div class="skill-card__icon"><i class="fa-brands fa-js"></i></div>
+                        <span class="skill-badge skill-badge--basic">Básico</span>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Desenvolvimento dinâmico e interativo para a web.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__header">
+                        <div class="skill-card__icon"><i class="fa-brands fa-html5"></i></div>
+                        <span class="skill-badge skill-badge--intermediate">Intermediário</span>
+                    </div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Estruturação semântica, acessibilidade e estilização responsiva.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__header">
+                        <div class="skill-card__icon"><i class="fa-brands fa-python"></i></div>
+                        <span class="skill-badge skill-badge--intermediate">Intermediário</span>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Automação de tarefas, scripts e manipulação de dados.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__header">
+                        <div class="skill-card__icon"><i class="fa-brands fa-php"></i></div>
+                        <span class="skill-badge skill-badge--basic">Básico</span>
+                    </div>
+                    <h3>PHP</h3>
+                    <p>Desenvolvimento Back-end e manipulação de dados em servidores.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__header">
+                        <div class="skill-card__icon"><i class="fa-solid fa-database"></i></div>
+                        <span class="skill-badge skill-badge--intermediate">Intermediário</span>
+                    </div>
+                    <h3>MySQL</h3>
+                    <p>Modelagem, consultas estruturadas e gerenciamento de banco de dados.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__header">
+                        <div class="skill-card__icon"><i class="fa-brands fa-linux"></i></div>
+                        <span class="skill-badge skill-badge--basic">Básico</span>
+                    </div>
+                    <h3>Linux</h3>
+                    <p>Navegação via terminal, comandos fundamentais e gerenciamento de arquivos.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__header">
+                        <div class="skill-card__icon"><i class="fa-solid fa-code"></i></div>
+                        <span class="skill-badge skill-badge--basic">Básico</span>
+                    </div>
+                    <h3>C#</h3>
+                    <p>Fundamentos de orientação a objetos e desenvolvimento com .NET.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projetos Section -->
+    <section class="section" id="projetos">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__subtitle">Portfólio</span>
+                <h2 class="section__title">Projetos em Destaque</h2>
+                <div class="section__line"></div>
+            </div>
+
+            <div class="projects__grid">
+                <!-- Projeto 1 -->
+                <article class="project-card">
+                    <div class="project-card__image-container">
+                        <img src="Imagens/tulen.webp" alt="Projeto Tulenn" class="project-img" data-fallback-title="Tulenn App">
+                        <div class="project-card__overlay">
+                            <a href="https://lukyyyyz.github.io/Tulenn/" target="_blank" rel="noopener" class="btn-icon" title="Acessar Projeto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <span class="project-card__tag">Web Application</span>
+                        <h3 class="project-card__title">Tulenn</h3>
+                        <p class="project-card__desc">Aplicação Web interativa projetada com foco em experiência do usuário e alta performance visual.</p>
+                        <div class="project-card__footer">
+                            <a href="https://lukyyyyz.github.io/Tulenn/" target="_blank" rel="noopener" class="project-link">Visualizar Live <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="project-card">
+                    <div class="project-card__image-container">
+                        <img src="Imagens/bitmap.png" alt="Projeto BitMap" class="project-img" data-fallback-title="BitMap Project">
+                        <div class="project-card__overlay">
+                            <a href="https://lukyyyyz.github.io/BitMap/" target="_blank" rel="noopener" class="btn-icon" title="Acessar Projeto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <span class="project-card__tag">Software Tool</span>
+                        <h3 class="project-card__title">BitMap</h3>
+                        <p class="project-card__desc">Ferramenta utilitária focada em processamento e manipulação lógica de mapas de bits e imagens.</p>
+                        <div class="project-card__footer">
+                            <a href="https://lukyyyyz.github.io/BitMap/" target="_blank" rel="noopener" class="project-link">Visualizar Live <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trajetória Section -->
+    <section class="section section--alt" id="experiencia">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__subtitle">Jornada</span>
+                <h2 class="section__title">Minha Trajetória</h2>
+                <div class="section__line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__date">Atualmente</span>
+                        <h3 class="timeline__title">Desenvolvedor de Software Independent</h3>
+                        <p class="timeline__desc">Criação e manutenção de projetos pessoais, estudos avançados em arquiteturas de software e novas linguagens.</p>
                     </div>
                 </div>
-            </form>
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__date">Evolução Contínua</span>
+                        <h3 class="timeline__title">Exploração & Aprendizado Profundo</h3>
+                        <p class="timeline__desc">Imersão em lógica de programação com C, desenvolvimento web dinâmico com PHP/JS e automação com Python.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div>
-            <button id="btn" class="botao">
-                Enviar
-            </button>
+    <!-- Contato Section -->
+    <section class="section" id="contato">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__subtitle">Conecte-se</span>
+                <h2 class="section__title">Vamos Conversar?</h2>
+                <div class="section__line"></div>
+            </div>
+
+            <div class="contact__wrapper">
+                <form class="form" id="contactForm" autocomplete="off" novalidate>
+                    <div class="form__group">
+                        <label for="nome">Nome Completo</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user"></i>
+                            <input id="nome" name="nome" type="text" required placeholder="Digite seu nome">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email">E-mail</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input id="email" name="email" type="email" required placeholder="seuemail@dominio.com">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                            <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" maxlength="15">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="mensagem">Mensagem</label>
+                        <div class="input-wrapper input-wrapper--textarea">
+                            <i class="fa-regular fa-comment"></i>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form__error" id="formError" role="alert" hidden>
+                        <i class="fa-solid fa-circle-exclamation"></i> Preencha o nome e um e-mail válido.
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--block">
+                        <span>Enviar Mensagem</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
         </div>
+    </section>
 
+    <!-- Toast Modal -->
+    <div class="toast" id="toast">
+        <div class="toast__icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="toast__text">Mensagem enviada com sucesso!</div>
+    </div>
 
-        <dialog id="modal">
-            Mensagem Enviado! :D
-            <button id="fechar">
-                X
-            </button>
-        </dialog>
+    <!-- Voltar ao topo -->
+    <button id="backToTop" class="back-to-top js-scroll-top" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
 
-        <div class="rodape">
-            <h1 class="da">
-                © Todos os direitos reservados por Lucas Augusto
-            </h1>
-           </div>
-        <script src="script.js" defer></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; <span id="ano"></span> <strong>Lucas Augusto</strong>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
